@@ -11,21 +11,21 @@ public class ValidacionTest {
 
 private Materia analisisMatI,mateDiscreta, arquitectura, pdp, ssoo, algebra, algoritmos, analisisMatII;
 @Before
-    public void setup(){
-        algoritmos = new Materia("Algoritmos");
-        arquitectura = new Materia("Arquitectura");
-        mateDiscreta = new Materia("MatematicaDiscreta");
-        analisisMatI = new Materia("AnalisisMatematicoI");
-        analisisMatII = new Materia("AnalisisMatematicoII");
-        algebra = new Materia("Algebra");
-        pdp = new Materia("ParadigmasDeProgramacion");
-        ssoo = new Materia("SistemasOperativos");
-        analisisMatII.getMateriasCorrelativas().add(analisisMatI);
-        analisisMatII.getMateriasCorrelativas().add(algebra);
-        pdp.getMateriasCorrelativas().add(algoritmos);
-        pdp.getMateriasCorrelativas().add(mateDiscreta);
-        ssoo.getMateriasCorrelativas().add(algoritmos);
-        ssoo.getMateriasCorrelativas().add(arquitectura);
+    public void setup() {
+    algoritmos = new Materia("Algoritmos");
+    arquitectura = new Materia("Arquitectura");
+    mateDiscreta = new Materia("MatematicaDiscreta");
+    analisisMatI = new Materia("AnalisisMatematicoI");
+    analisisMatII = new Materia("AnalisisMatematicoII");
+    algebra = new Materia("Algebra");
+    pdp = new Materia("ParadigmasDeProgramacion");
+    ssoo = new Materia("SistemasOperativos");
+    analisisMatII.getMateriasCorrelativas().add(analisisMatI);
+    analisisMatII.getMateriasCorrelativas().add(algebra);
+    pdp.getMateriasCorrelativas().add(algoritmos);
+    pdp.getMateriasCorrelativas().add(mateDiscreta);
+    ssoo.getMateriasCorrelativas().add(algoritmos);
+    ssoo.getMateriasCorrelativas().add(arquitectura);
 
 }
 @Test
